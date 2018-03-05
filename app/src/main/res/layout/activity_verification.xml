@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_verification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zahidhasan.travelfast.driver.activity.VerificationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layout1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Verify Your Account"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#C90000"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout1"
+            android:layout_marginTop="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layout_info">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bike Registration Number"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/bike_lbl"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/bike_lbl"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/bike_editText"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="National ID Number"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="5dp"
+                            android:layout_below="@+id/bike_editText"
+                            android:id="@+id/nid_lbl"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nid_lbl"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/nid_editText"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Profile Image"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/image_lbl"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/image_lbl"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Upload"
+                            android:background="@drawable/bg_button4"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:id="@+id/profile_upld_btn"
+                            android:padding="15dp"/>
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/image_lbl"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:layout_marginLeft="40dp"
+                            android:id="@+id/profile_image_view"
+                            android:background="@drawable/shape8"
+                            android:layout_toRightOf="@+id/profile_upld_btn"
+                            android:scaleType="fitXY" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bike Registration Paper Snapshot"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/bike_paper_lbl"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/bike_paper_lbl"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Upload"
+                            android:background="@drawable/bg_button4"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:id="@+id/bike_upld_btn"
+                            android:padding="15dp"/>
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/bike_paper_lbl"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:id="@+id/bike_paper_image_view"
+                            android:layout_marginLeft="40dp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/shape8"
+                            android:layout_toRightOf="@+id/bike_upld_btn"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="National ID Card Snapshot"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/nid_paper_lbl"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nid_paper_lbl"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:text="Upload"
+                            android:background="@drawable/bg_button4"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:id="@+id/nid_upld_btn"
+                            android:padding="15dp"/>
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_below="@id/nid_paper_lbl"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:scaleType="fitXY"
+                            android:id="@+id/nid_image_view"
+                            android:layout_marginLeft="40dp"
+                            android:background="@drawable/shape8"
+                            android:layout_toRightOf="@+id/nid_upld_btn"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SUBMIT"
+                            android:id="@+id/submit_btn"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/bg_button4"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

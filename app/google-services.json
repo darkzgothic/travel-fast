@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "987855652863",
+    "firebase_url": "https://travelfast-479f0.firebaseio.com",
+    "project_id": "travelfast-479f0",
+    "storage_bucket": "travelfast-479f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987855652863:android:9733ec096541899f",
+        "android_client_info": {
+          "package_name": "com.example.zahidhasan.travelfast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987855652863-71espp1n5lkohb55ln73p03smulpnjgu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zahidhasan.travelfast",
+            "certificate_hash": "3424c990f2b88acbbd29abbdae21962f966c8547"
+          }
+        },
+        {
+          "client_id": "987855652863-032jm4smgjr50monqi4vj7c5ug019ksn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyK8HZ3TFsgMB2p0j41p8CEMk4qzqn4wk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987855652863-032jm4smgjr50monqi4vj7c5ug019ksn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

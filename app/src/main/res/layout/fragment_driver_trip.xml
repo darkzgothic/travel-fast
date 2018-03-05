@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zahidhasan.travelfast.driver.fragments.DriverTripFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/shape6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drop Address"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/pickup_label" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pickup_label"
+            android:text="Amtoli, Mohakhali, Dhaka"
+            android:gravity="center"
+            android:id="@+id/pickup_add"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/ride_menu"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/start_trip_btn"
+            android:text="Tap to end trip"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shape6"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/shape6"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:id="@+id/cancel_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:layout_marginRight="0dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cancel_btn"
+            android:background="@drawable/shape6"
+            android:layout_alignParentRight="true"
+            android:id="@+id/call_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:layout_marginRight="0dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape6"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/call_btn"
+            android:id="@+id/message_btn"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape6"
+            android:text="+"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ride_menu"
+            android:layout_below="@+id/message_btn"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

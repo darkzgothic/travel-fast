@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context="com.example.zahidhasan.travelfast.driver.fragments.DriverLoginFragment">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:background="@drawable/shape1"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_layout"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp">
+
+            <EditText
+                android:id="@+id/email_edttxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:maxLines="1"
+                android:hint="Enter Email"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_layout"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/name_layout"
+            android:background="@drawable/bg_edittext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/password_edttxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:hint="Enter Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/login_btn"
+                android:background="@drawable/login">
+
+            </Button>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp">
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/back_btn"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back">
+
+            </Button>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/reg_link"
+            android:textStyle="bold"
+            android:textColor="#27704D"
+            android:textSize="20sp"
+            android:id="@+id/reg_txtview"
+            android:layout_marginBottom="20dp"/>
+
+
+
+
+    </RelativeLayout>
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Want To Work? Register Here"-->
+    <!--android:textColor="#819830"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textSize="20sp"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_alignParentBottom="true"/>-->
+
+</RelativeLayout>

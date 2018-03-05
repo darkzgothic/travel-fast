@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zahidhasan.travelfast.MessageActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/sendMsgLayout">
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:hint="Type your message"
+                android:maxHeight="80dp" />
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@id/messageEditText"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="Send"
+                android:background="@drawable/shape5"
+                android:id="@+id/sendButton"
+                />
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="380dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/sendMsgLayout"
+            android:id="@+id/messageListView">
+
+        </ListView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/backToMap"
+            android:background="@drawable/shape5"
+            android:text="Back to map"/>
+    </RelativeLayout>
+
+</RelativeLayout>
